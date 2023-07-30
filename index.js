@@ -71,7 +71,6 @@ const editEmployee = () => {
     </form>
   `;
   modalWrapper.style.display = "block";
-  modal.style.display = "block";
 
   const editForm = document.querySelector("#editForm");
   editForm.addEventListener("submit", (event) => {
@@ -83,7 +82,6 @@ const editEmployee = () => {
     employee.hireDate = document.querySelector("#editHireDate").value;
 
     localStorage.setItem("employees", JSON.stringify(employees));
-    modal.style.display = "none";
     modalWrapper.style.display = "none";
     renderTable();
   });
@@ -91,9 +89,9 @@ const editEmployee = () => {
 
 // Увольнение сотрудников
 const fireEmployees = () => {
-  const Checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
-  Checkboxes.forEach((checkbox) => {
+  checkboxes.forEach((checkbox) => {
     if (checkbox.checked) {
       employees.splice(checkbox.index, 1);
     }
