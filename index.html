@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Таблица сотрудников</title>
+</head>
+
+<body>
+    <header>
+        <h1>Таблица сотрудников</h1>
+    </header>
+
+    <main>
+        <form id="employeeForm">
+            <input type="text" id="firstName" placeholder="Имя" required>
+            <input type="text" id="lastName" placeholder="Фамилия" required>
+            <input type="number" id="salary" placeholder="Зарплата" required>
+            <input type="date" id="hireDate" required>
+            <button type="submit">Добавить</button>
+        </form>
+
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Зарплата <span class="sort">&uarr;&darr;</span></th>
+                    <th>Дата найма <span class="sort">&uarr;&darr;</span></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+
+    <section class="actions">
+        <button id="editButton">Редактировать</button>
+        <button id="fireButton">Уволить</button>
+        <button id="fireAllButton">Уволить всех</button>
+    </section>
+    <div id="modalWrapper">
+        <div id="modal" class="modal">
+        </div>
+    </div>
+
+    <div id="banner" class="banner">
+        Мы увольняем сотрудников!
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

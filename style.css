@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input,
+button {
+  margin-right: 10px;
+}
+
+#employeeTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#employeeTable th,
+#employeeTable td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+#modalWrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  /* display: none; */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(65, 65, 66, 0.5)
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.sort {
+  cursor: pointer;
+  margin-left: 5px;
+}
